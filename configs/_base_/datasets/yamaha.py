@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = "CustomDataset"
-data_root = "data/rui/"
+data_root = "data/yamaha/"
 classes = (
     "sky",
     "rough trail",
