@@ -53,8 +53,8 @@ data = dict(
         img_dir="img_dir/train",
         ann_dir="ann_dir/train",
         pipeline=train_pipeline,
-        img_suffix="_rgb.png",
-        seg_map_suffix="_segmentation.png",
+        img_suffix="_rgb.jpg",
+        seg_map_suffix="_seg.png",
         classes=classes,
     ),
     val=dict(
