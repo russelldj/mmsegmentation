@@ -2,15 +2,24 @@
 dataset_type = "CustomDataset"
 data_root = "data/yamaha/"
 classes = (
-    "sky",
-    "rough trail",
-    "smooth",
-    "trail",
-    "traversable grass",
-    "high vegetation",
     "non-traversable low vegetation",
+    "sky",
+    "high vegetation",
+    "traversable grass",
+    "rough trail",
+    "smooth trail",
     "obstacle",
+    "Gator"
 )
+PALETTE = [[  0, 160,   0],
+           [  1,  88, 255],
+           [ 40,  80,   0],
+           [128, 255,   0],
+           [156,  76,  30],
+           [178, 176, 153],
+           [255,   0,   0],
+           [255, 255, 255]]
+
 # TODO update
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True
