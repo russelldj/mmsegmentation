@@ -51,6 +51,15 @@ def voc_classes():
         'tvmonitor'
     ]
 
+def rui_classes():
+    """Rui Nunes' synthetic dataset class names for external use"""
+    return ["sky", "soil", "trails", "canopy", "fuel", "trunks", "stumps"]
+
+
+def yamaha_classes():
+    """Yamaha-CMU offroad dataset class names for external use"""
+    return ["NT low vegatation", "sky", "high vegetation", "traversable grass", "rough trails", "smooth trails", "obstacles", "truck"]
+
 
 def cityscapes_palette():
     """Cityscapes palette for external use."""
@@ -112,10 +121,24 @@ def voc_palette():
             [128, 64, 0], [0, 192, 0], [128, 192, 0], [0, 64, 128]]
 
 
+def rui_palette():
+    """"Rui Nunes' synthetic dataset palette for external use"""
+    # ["sky", "soil", "trails", "canopy", "fuel", "trunks", "stumps"]
+    return [[0, 0, 255], [150, 75, 0], [140,146,172], [0,255,0], [255,0,0], [255,0,255], [255,0,128]]
+
+
+def yamaha_palette():
+    """"CMU-Yamaha offroad dataset palette for external use"""
+    #["NT low vegatation", "sky", "high vegetation", "traversable grass", "rough trails", "smooth trails", "obstacles", "truck"]
+    return  [[0, 160, 0], [1, 88, 255], [40, 80, 0], [128, 255, 0],
+             [156, 76, 30], [178, 176, 153], [255, 0, 0], [255, 255, 255]]
+
 dataset_aliases = {
     'cityscapes': ['cityscapes'],
     'ade': ['ade', 'ade20k'],
-    'voc': ['voc', 'pascal_voc', 'voc12', 'voc12aug']
+    'voc': ['voc', 'pascal_voc', 'voc12', 'voc12aug'],
+    'rui': ['rui'],
+    'yamaha': ['yamaha'],
 }
 
 
