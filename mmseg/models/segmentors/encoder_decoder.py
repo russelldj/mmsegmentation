@@ -266,8 +266,8 @@ class EncoderDecoder(BaseSegmentor):
             seg_pred = list(seg_pred)
             return seg_pred
         else:
-            seg_logit = seg_logit.cpu().numpy()[0]
-            seg_logit = np.transpose(seg_logit, axes=(1,2,0))
+            seg_logit = seg_logit.cpu().numpy()
+            seg_logit = np.transpose(seg_logit, axes=(0, 2 ,3, 1))
             return list(seg_logit)
 
     def aug_test(self, imgs, img_metas, rescale=True):
