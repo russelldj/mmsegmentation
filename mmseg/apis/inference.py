@@ -67,13 +67,14 @@ class LoadImage:
         return results
 
 
-def inference_segmentor(model, img):
+def inference_segmentor(model, img, return_probabilities=False):
     """Inference image(s) with the segmentor.
 
     Args:
         model (nn.Module): The loaded segmentor.
         imgs (str/ndarray or list[str/ndarray]): Either image files or loaded
             images.
+        return_probabilities (bool) whether to return the probablities instead of the argmax class
 
     Returns:
         (list[Tensor]): The segmentation result.
@@ -95,7 +96,7 @@ def inference_segmentor(model, img):
 
     # forward the model
     with torch.no_grad():
-        result = model(return_loss=False, rescale=True, **data)
+        result = model(return_loss=False, rescale=True, return_probabilities=return_probabilities, **data)
     return result
 
 
