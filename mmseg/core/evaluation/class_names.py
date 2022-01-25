@@ -241,6 +241,19 @@ def rui_yamaha_classes():
     ]
 
 
+def semfire_classes():
+    """Classes from the UC ISR Semfire segmentation project"""
+    return [
+        "Background",
+        "Live flammable material (aka fuel)",
+        "Trunks",
+        "Humans",
+        "Animal",
+        "Canopies",
+        "Traversable",
+    ]
+
+
 def cityscapes_palette():
     """Cityscapes palette for external use."""
     return [
@@ -448,6 +461,7 @@ def voc_palette():
         [0, 64, 128],
     ]
 
+
 def rui_palette():
     """"Rui Nunes' synthetic dataset palette for external use"""
     # ["sky", "soil", "trails", "canopy", "fuel", "trunks", "stumps"]
@@ -490,6 +504,19 @@ def rui_yamaha_palette():
     ]
 
 
+def semfire_palette():
+    """Palette from the UC ISR Semfire segmentation project"""
+    return [
+        [0, 0, 0],
+        [0, 0, 251],
+        [14, 111, 155],
+        [0, 255, 241],
+        [220, 30, 241],
+        [51, 146, 199],
+        [194, 196, 196],
+    ]
+
+
 dataset_aliases = {
     "cityscapes": ["cityscapes"],
     "ade": ["ade", "ade20k"],
@@ -497,6 +524,7 @@ dataset_aliases = {
     "rui": ["rui"],
     "yamaha": ["yamaha"],
     "rui_yamaha": ["rui_yamaha"],
+    "semfire": ["semfire"],
 }
 
 
