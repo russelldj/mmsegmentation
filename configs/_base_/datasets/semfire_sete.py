@@ -1,7 +1,7 @@
 # dataset settings
 dataset_type = "CustomDataset"
 # TODO Consider having a different one for the dif
-data_root = "data/semfire_sete_RG/"
+data_root = "data/semfire_sete/"
 classes = (
     "background",
     "fuel",

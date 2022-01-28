@@ -1,4 +1,4 @@
-_base_ = ["./segformer_mit-b0_512x512_160k_semfire_sete_RG.py"]
+_base_ = ["./segformer_mit-b0_512x512_160k_semfire_sete.py"]
 
 # model settings
 model = dict(

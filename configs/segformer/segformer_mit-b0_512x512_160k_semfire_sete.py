@@ -1,6 +1,6 @@
 _base_ = [
     "../_base_/models/segformer_mit-b0.py",
-    "../_base_/datasets/semfire_sete_RG.py",
+    "../_base_/datasets/semfire_sete.py",
     "../_base_/default_runtime.py",
     "../_base_/schedules/schedule_160k.py",
 ]
