@@ -15,7 +15,7 @@ classes = (
 # TODO update
 # label_map = {0:0, 1:1}
 img_norm_cfg = dict(
-    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True
+    mean=[48.53323261, 62.0253035, 44.00000335], std=[45.47641864, 44.69583953, 47.25690955], to_rgb=True
 )
 crop_size = (256, 512)
 train_pipeline = [
