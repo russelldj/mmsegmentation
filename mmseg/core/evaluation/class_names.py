@@ -517,6 +517,21 @@ def semfire_palette():
     ]
 
 
+def superannotate_palette():
+    return [
+        [0, 0, 0],
+        [184, 233, 134],
+        [243, 90, 70],
+        [255, 204, 51],
+        [184, 61, 245],
+        [250, 50, 83],
+        [13, 53, 26],
+        [255, 165, 0],
+        [128, 129, 131],
+        [42, 125, 209],
+    ]
+
+
 dataset_aliases = {
     "cityscapes": ["cityscapes"],
     "ade": ["ade", "ade20k"],
@@ -525,6 +540,7 @@ dataset_aliases = {
     "yamaha": ["yamaha"],
     "rui_yamaha": ["rui_yamaha"],
     "semfire": ["semfire"],
+    "superannotate": ["superannotate"],
 }
 
 
