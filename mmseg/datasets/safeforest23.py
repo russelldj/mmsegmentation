@@ -23,22 +23,24 @@ class Safeforest23Dataset(BaseSegDataset):
             "Sky",
             "Blurry",
             "Obstacles",
+            "Drones",
         ),
         palette=[
-            [128, 64, 128],
-            [244, 35, 232],
-            [70, 70, 70],
-            [102, 102, 156],
-            [190, 153, 153],
-            [153, 153, 153],
-            [250, 170, 30],
-            [220, 220, 0],
-            [107, 142, 35],
-            [152, 251, 152],
-            [70, 130, 180],
-            [220, 20, 60],
-            [255, 0, 0],
-            [0, 0, 142]])
+            [128, 224, 255],  # Dry Grass, 0
+            [0, 255, 255],  # Green Grass (canopy), 1
+            [80, 0, 255],  # Dry Shrubs, 2
+            [45, 112, 134],  # Green Shrubs, 3
+            [0, 255, 144],  # Canopy, 4
+            [128, 255, 199],  # Wood Pieces, 5
+            [224, 0, 255],  # Litterfall (bare earth or fuel), 6
+            [0, 194, 255],  # Timber Litter, 7
+            [45, 134, 95],  # Live Trunks, 8
+            [255, 0, 111],  # Bare Earth, 9
+            [239, 128, 255],  # People, 10
+            [167, 128, 255],  # Sky, 11
+            [134, 45, 83],  # Blurry, 12
+            [83, 45, 134],  # Obstacle
+            [45, 68, 134]])  # Drones, 13
 
     def __init__(self,
                  img_suffix='_rgb.png',
