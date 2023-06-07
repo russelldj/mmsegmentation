@@ -22,7 +22,7 @@ from .refuge import REFUGEDataset
 from .stare import STAREDataset
 from .synapse import SynapseDataset
 from .safeforest23 import Safeforest23Dataset
-from .safeforest23_compressed import SafeforestCompressed23Dataset
+from .safeforest23_compressed import Safeforest23CompressedDataset
 # yapf: disable
 from .transforms import (CLAHE, AdjustGamma, BioMedical3DPad,
                          BioMedical3DRandomCrop, BioMedical3DRandomFlip,
