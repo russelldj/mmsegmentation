@@ -21,6 +21,7 @@ from .potsdam import PotsdamDataset
 from .refuge import REFUGEDataset
 from .stare import STAREDataset
 from .synapse import SynapseDataset
+from .safeforest23 import Safeforest23Dataset
 # yapf: disable
 from .transforms import (CLAHE, AdjustGamma, BioMedical3DPad,
                          BioMedical3DRandomCrop, BioMedical3DRandomFlip,
@@ -50,6 +51,6 @@ __all__ = [
     'DecathlonDataset', 'LIPDataset', 'ResizeShortestEdge',
     'BioMedicalGaussianNoise', 'BioMedicalGaussianBlur',
     'BioMedicalRandomGamma', 'BioMedical3DPad', 'RandomRotFlip',
-    'SynapseDataset', 'REFUGEDataset', 'MapillaryDataset_v1',
+    'SynapseDataset', 'Safeforest23Dataset', 'REFUGEDataset', 'MapillaryDataset_v1',
     'MapillaryDataset_v2'
 ]
